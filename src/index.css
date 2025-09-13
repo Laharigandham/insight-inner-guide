@@ -2,41 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Wellness Platform Design System - Calming, therapeutic colors and gradients */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Main background and surfaces */
+    --background: 220 20% 97%;
+    --foreground: 215 25% 15%;
 
+    /* Cards and elevated surfaces */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
 
+    /* Popovers and modals */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary wellness colors - calming blue */
+    --primary: 210 65% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 210 65% 75%;
+    --primary-dark: 210 65% 45%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary wellness colors - gentle green */
+    --secondary: 155 65% 65%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 155 65% 80%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Tertiary wellness colors - soft purple */
+    --tertiary: 260 55% 70%;
+    --tertiary-foreground: 0 0% 100%;
+    --tertiary-light: 260 55% 85%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Wellness state colors */
+    --wellness-excellent: 140 65% 60%;
+    --wellness-good: 100 65% 65%;
+    --wellness-neutral: 45 65% 70%;
+    --wellness-low: 25 65% 65%;
+    --wellness-poor: 0 65% 65%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Muted and accent colors */
+    --muted: 220 15% 95%;
+    --muted-foreground: 215 15% 55%;
+    --accent: 220 15% 93%;
+    --accent-foreground: 215 25% 15%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Status colors */
+    --destructive: 0 65% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 140 65% 55%;
+    --success-foreground: 0 0% 100%;
+    --warning: 45 90% 60%;
+    --warning-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    /* Borders and inputs */
+    --border: 220 15% 88%;
+    --input: 220 15% 92%;
+    --ring: 210 65% 58%;
+
+    /* Gradients for wellness themes */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-light)));
+    --gradient-tertiary: linear-gradient(135deg, hsl(var(--tertiary)), hsl(var(--tertiary-light)));
+    --gradient-wellness: linear-gradient(135deg, hsl(var(--primary-light)), hsl(var(--secondary-light)));
+    --gradient-calm: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* Shadows for depth */
+    --shadow-soft: 0 4px 20px hsl(var(--primary) / 0.1);
+    --shadow-wellness: 0 8px 32px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 2px 12px hsl(215 25% 15% / 0.08);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-gentle: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
